@@ -1,0 +1,19 @@
+version: "3"
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      # puerto_externo : puerto_interno
+      - "5050:5000"
+    environment:
+      - GREETINGS=Hello Rubiko Tech!
+  curl:
+    #Importante que tenga esta dependencia,
+    # asi conseguimos que no monte este servicio
+    # hasta que no este activo el sevicio web
+    depends_on:
+      - web
+    image: curlimages/curl
+    command: ["curl", "http://web:5000/health"]
