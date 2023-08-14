@@ -4,6 +4,8 @@
 
 Este repositorio contiene los archivos necesarios para dockerizar un servidor web simple utilizando NodeJS y Express.
 
+❗❗ **En este repositorio hay dos ramas. En la rama principal, llamada 'main', se encuentra desarrollado el proyecto de acuerdo con las especificaciones del PDF. En la rama llamada 'isolate', he querido experimentar con la creación de un contenedor completamente aislado, al cual solo se puede acceder mediante del CURL. Esta medida busca cumplir con los principios de aislamiento y seguridad.**
+
 ## Instrucciones
 
 ### Ejecutar con Docker
@@ -40,6 +42,8 @@ Si deseas personalizar el saludo, puedes modificar la variable de entorno `GREET
 # [EN] Basic Rubiko Dockerization Project <a name="EN"></a>
 
 This repository contains the necessary files to dockerize a simple web server using NodeJS and Express.
+
+❗❗ **In this repository, there are two branches. In the main branch, named 'main', the project is developed according to the specifications in the PDF. In the 'isolate' branch, I have wanted to experiment with creating a completely isolated container, which can only be accessed using CURL. This measure aims to adhere to the principles of isolation and security.**
 
 ## Instructions
 
